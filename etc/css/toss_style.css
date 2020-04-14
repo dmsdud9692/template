@@ -1,0 +1,183 @@
+
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/NotoSansKr/NotoSansKR-Light.woff2) format('woff2'),
+        url(../fonts/NotoSansKr/NotoSansKR-Light.woff) format('woff'),
+        url(../fonts/NotoSansKr/NotoSansKR-Light.otf) format('opentype');
+    }
+ @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/NotoSansKr/NotoSansKR-Regular.woff2) format('woff2'),
+        url(../fonts/NotoSansKr/NotoSansKR-Regular.woff) format('woff'),
+        url(../fonts/NotoSansKr/NotoSansKR-Regular.otf) format('opentype');
+    }
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/NotoSansKr/NotoSansKR-Bold.woff2) format('woff2'),
+        url(../fonts/NotoSansKr/NotoSansKR-Bold.woff) format('woff'),
+        url(../fonts/NotoSansKr/NotoSansKR-Bold.otf) format('opentype');
+        }
+body {
+    width:100%; 
+    height:100%;
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+    font-size:14px;
+    line-height: 1.5;
+    letter-spacing: -0.1em;
+}
+h1 {font-size: 26px; font-weight: bold;}
+h2 {font-size: 24px; font-weight: bold;}
+h3 {font-size: 17px; font-weight: bold;}
+
+/* 칼라 */
+.c-gray-1 {color:#4e5968;}
+
+/* 마진 */
+.mgt-10{margin-top:10px;}
+.mgt-20{margin-top:20px;}
+
+.txt-c {text-align: center;}
+.toss-wrap {
+    max-width: 1440px;
+    margin:0 auto;
+}
+.toss-top {
+    position: relative; 
+    width: 100%; 
+    height: 0; 
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+.toss-visual {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/toss/toss_main_visual.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.toss-visual h1 {
+    position: absolute;
+    left:30px;
+    top:45px;
+}
+.toss-cont {
+    position: relative;
+}
+.toss-cont-inner {
+    border-bottom:15px solid #f2f4f5;
+}
+.toss-cont-inner  > section {
+    padding:35px 25px;
+    max-width: 800px;
+    margin:0 auto;
+    margin-top:15px;
+    text-align: center;;
+    
+}
+.toss-cont-inner  > section > h2 {
+    margin-bottom:35px;
+}
+.toss-cont-inner  > section > h2 + h3 {
+    margin-top:-30px;
+    margin-bottom:35px;
+
+}
+figure img {max-width: 100%;}
+figure + figure {margin-top:20px}
+.toss-cont-inner figcaption {
+    color:#6b7684; 
+    font-size: 15px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+.badge-list li {text-align: center; padding-bottom: 10px;}
+.badge-list li p {
+    display:inline-block;
+    padding:10px 20px;
+    background:#e8f3ff;
+    color:#1b64da;
+    font-size:16px;
+    font-weight: bold;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+.badge-list li p::after {
+    content: "";
+    display:inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin: -3px 0 0 5px;;
+}
+.badge-list li:first-child p::after {
+    background: url(../images/toss/img_badge_note.png);
+}
+.badge-list li:nth-child(2) p::after {
+    background: url(../images/toss/img_badge_subway.png);
+}
+.badge-list li:nth-child(3) p::after {
+    background: url(../images/toss/img_badge_car.png);
+}
+.badge-list li:nth-child(4) p::after {
+    background: url(../images/toss/img_badge_giftcard.png);
+}
+.badge-list li:nth-child(5) p::after {
+    background: url(../images/toss/img_badge_p.png);
+}
+.badge-list li:last-child p::after {
+    background: url(../images/toss/img_badge_oldman.png);
+}
+.plug figure span {
+    display: block;
+    background: #f9fafb;
+    padding: 25px 0;
+}
+figure + .btn-wrap {margin-top:15px;}
+button {
+    width: 100%;
+    background: #4e5968;
+    color:#fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    
+}
+
+@media screen and (min-width:760px){
+    .toss-top {
+        padding-bottom: 50%;
+    }
+    .toss-visual {
+        background-position: 50% 80%;
+    }
+}
+/* 이벤트 */
+/* @media screen and (min-width: 980px) {
+    .event-wrap {
+        width:100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .event-top {
+        width:100%;
+        height: 100vh;
+        background-size : cover;
+        background: url(../images/unpack_event/bg_unpack_event_top.jpg) 50% 50% no-repeat;
+    }
+    .event-top h1 {
+        position: relative;
+        text-align: center;
+        margin:30px 0 60px 0;}
+
+} */

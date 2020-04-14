@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        ​/* Remove inner shadow from inputs on mobile iOS */
+        /* 모바일 Safari 나 Chrome 에서 input, textarea 은 내부에 inner shadow 값이 들어가기 때문에 아래처럼 변경  */
+        textarea, input { -webkit-appearance: none; -webkit-border-radius: 0;}
+        /* select 박스에서 기본 화살표를 삭제 */
+        select { -moz-appearance:none; /* Firefox */ -webkit-appearance:none; /* Safari and Chrome */ appearance:none; } /* ie에서는 이렇게만 가능 >>>>>>>>>> */ select::-ms-expand { display:none }
+
+        .blind {position: absolute; width: 0; height: 0; font-size: 0; left:-9999px; top:-9999px;}
+        
+        /* 라디오, 체크박스 */
+        input[type=radio] {}
+        .lb-check, .lb-radio {cursor: pointer; position: relative; display: inline-block; vertical-align: top; min-height: 20px; padding: 7px 0 0 30px; margin: 0; line-height: 1.5;}
+        .lb-radio::before {content: ""; display: inline-block; position: absolute; min-width: 22px; left: 0; top: 9px; min-height: 22px; width: 22px; height: 22px; margin-right: 7px; background-color: #fff; box-sizing: border-box; border: 1px solid #999; border-radius: 50%;
+        /* transition: box-shadow .5s,border .3s; */
+        }
+        input:checked+.lb-radio:before {border:1px solid #f05014; background:#f05014 url(/static/images/common/.png) no-repeat -3px -3px
+        }
+        .lb-radio span, .lb-check span {display: inline-block; vertical-align: top; height: 100%;font-size: 16px; color: #111; line-height: 24px; border-bottom: 1px solid transparent;}
+        
+        .lb-check::before {content: ""; display: inline-block; position: absolute; min-width: 22px; left: 0; top: 9px; min-height: 22px; width: 22px; height: 22px; margin-right: 7px; background-color: #fff; box-sizing: border-box; border: 1px solid #999; border-radius: 5px;
+        /* transition: box-shadow .5s,border .3s; */
+        }
+        input:checked+.lb-check:before {border:1px solid #f05014; background:#f05014 url(/static/images/common/.png) no-repeat -3px -3px
+        }
+
+        /* 셀렉트박스 */
+        .ui-select {position: relative;}
+        .ui-select select{width:100%; padding:5px 20px 5px 10px; border:none; border-bottom:1px solid #333}
+        .ui-select::before {content:"*"; display:block; position: absolute; right: 5px; top:5px; width: 20px; height: 20px;}
+    </style>
+</head>
+<body>
+    <!-- radio -->
+    <fieldset role="group">
+        <legend class="blind">성별선택</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label class="lb-radio" for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label class="lb-radio" for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label class="lb-radio" for="other">Other</label>
+    </fieldset>
+    <!-- checkbox -->
+    <fieldset role="group">
+        <legend class="blind">취미선택</legend>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label class="lb-check" for="vehicle1"> I have a bike</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label class="lb-check" for="vehicle2"> I have a car</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label class="lb-check" for="vehicle3"> I have a boat</label>
+    </fieldset>
+    <!--select-->
+    <div class="field-inlabel">
+        <label htmlFor="GuideSelect_1" class="field-inlabel-label">대물배상 보상한도액(1사고당)</label>
+        <div class="ui-select">
+            <select id="GuideSelect_1" title="금액 선택" name="GuideSelect_1" onChange={test} >
+                <option value="" hidden>금액 선택</option>
+                <option value="1">100만원</option>
+                <option value="2">200만원</option>
+                <option value="3">300만원</option>
+                <option value="4">400만원</option>
+                <option value="5">500만원</option>
+                <option value="6">600만원</option>
+                <option value="7">700만원</option>
+                <option value="8">800만원</option>
+            </select>
+        </div>
+    </div>
+    
+</body>
+</html>
