@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: 
+        /* url(../fonts/NotoSansKr/NotoSansKR-Light.woff2) format('woff2'),
+        url(../fonts/NotoSansKr/NotoSansKR-Light.woff) format('woff'), */
+        url(../fonts/NotoSansKr/NotoSansKR-Light.otf) format('opentype');
+    }
+ @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+        /* url(../fonts/NotoSansKr/NotoSansKR-Regular.woff2) format('woff2'),
+        url(../fonts/NotoSansKr/NotoSansKR-Regular.woff) format('woff'), */
+        url(../fonts/NotoSansKr/NotoSansKR-Regular.otf) format('opentype');
+    }
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        /* url(../fonts/NotoSansKr/NotoSansKR-Bold.woff2) format('woff2'),
+        url(../fonts/NotoSansKr/NotoSansKR-Bold.woff) format('woff'), */
+        url(../fonts/NotoSansKr/NotoSansKR-Bold.otf) format('opentype');
+        }
+
+
+body {width: 100%; height: 100%; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size: 16px; line-height: 1.5; letter-spacing: -0.048; color: #333;}
+table {border-collapse: collapse; border-spacing: 0;}
+th,td {border-collapse: collapse;}
+caption {height: 0;overflow: hidden; opacity: 0; filter: alpha(opacity=0);}
+
+
+/* margin, padding */
+.mt5{margin-top:5px}
+.mt10{margin-top:10px}
+.mt15{margin-top:15px}
+.mt20{margin-top:20px}
+.mt25{margin-top:25px}
+.mt30{margin-top:30px}
+.mt35{margin-top:35px}
+.mt40{margin-top:40px}
+.mt45{margin-top:45px}
+.mt50{margin-top:50px}
+
+
+/* layout */
+.wrap {width:100%; padding:0 0 100px 0;}
+.wrap-inner {width:700px; margin:0 auto;}
+.header {background: #333; margin-bottom:50px;}
+
+.header ul {margin:0 auto; max-width: 1000px;}
+.header ul li {display:inline-block;}
+.header ul li a {display:block; padding:30px 20px; font-size: 20px; font-weight: 700; color:#fff; text-decoration: none;}
+
+
+/* 컨텐츠간 간격 */
+.tit-wrap + .tbl-base {margin-top:30px;}
+
+
+/* text:align */
+.txt-c {text-align: center !important;}
+.txt-c th, .txt-c td {text-align: center !important;}
+
+.txt-l {text-align: left !important;}
+.txt-l th, .txt-l td {text-align: left !important;}
+
+.txt-r {text-align: right !important;}
+.txt-r th, .txt-r td {text-align: right !important;}
+
+
+/* font */
+h1 {font-size:32px; font-weight: 700; line-height: 45px;}
+h2 {font-size:28px; font-weight: 700; line-height: 36px;}
+h3 {font-size:24px; font-weight: 700; line-height: 32px;}
+h4 {font-size:20px; font-weight: 700; line-height: 28px;}
+h5 {font-size:18px; font-weight: 700; line-height: 26px;}
+h6 {font-size:16px; font-weight: 700; line-height: 24px;}
+
+p.bul-dot, .bul-dot li {position:relative; padding-left: 13px; margin-top:8px;}
+p.bul-dot::before, .bul-dot > li::before {content: ""; position:absolute; top:10px; left:0; display:block; width: 5px; height: 5px; border-radius: 50%; background: #333;}
+.bul-dot ul li::before {content: "-"; position: absolute; left: 0; top: 0; font-weight: 400; line-height: 1.2; background: none;
+}
+
+.bul-dot.type-a {color:#777;}
+.bul-dot.type-a > li::before {background: #777;}
+.bul-dot.type-b {color:#777; font-size:14px;}
+p.bul-dot.type-b, .bul-dot.type-b li{padding-left:10px;}
+p.bul-dot.type-b::before, .bul-dot.type-b li::before {content: ""; position:absolute; top:10px; left:0; display:block; width: 3px; height: 3px; border-radius: 50%; background: #777;}
+
+
+/* table */
+.tbl-base {border-top: 1px solid #777;}
+.tbl-base table{width: 100%;  border-bottom: 1px solid #ddd;
+    /* position: relative; table-layout: fixed; */
+}
+.tbl-base table th {background: #f4f4f4; border-bottom: 1px solid #ddd; color: #010101; padding: 13px 10px; font-size: 14px; height: 40px; font-weight: 400; word-break: break-all;margin-top:1px;}
+.tbl-base table td {background: #fff; border-top: 1px solid #ddd; color: rgba(68, 68, 68, 0.99); height: 40px; padding: 13px 10px; font-weight: 400; font-size: 14px; word-break: break-all; line-height: 1.5; text-align: left;}
+.tbl-base table tbody th {text-align:left;}
+
+.tbl-base.type-a table th {background: #ffffff; border-bottom: 1px solid #eee; border-left: 1px solid #eee; color:#333;  padding: 18px 10px; font-size: 16px; font-weight: 700;}
+.tbl-base.type-a table th:first-child {border-left:none;}
+.tbl-base.type-a table tbody th{font-weight: 400; text-align: center;}
+.tbl-base.type-a table td {border-left: 1px solid #eee; border-bottom: 1px solid #eee;}
+.tbl-base.type-a table td:first-child {border-left: none;;}
+
+.tbl-board table {table-layout: fixed;width: 100%; border-top: 1px solid #bbb; border-bottom: 1px solid #ddd; text-align: center;}
+.tbl-board table th {padding: 18px 10px; font-size: 16px; font-weight: 700; border-bottom: 1px solid #eee;}
+.tbl-board table td {padding: 18px 10px; font-size: 16px; border-bottom: 1px solid #eee;}
+.tbl-board table td .tit {position: relative; padding: 0 10px; display: block; width: 100%; overflow: hidden; text-overflow: ellipsis;white-space: nowrap;text-decoration: none;color: #333;text-align: initial;cursor: pointer
+}   
+.tbl-board .txt-tag {display:inline-block; padding:3px 15px; text-align: center; color: #fff; border-radius:10px; font-size:12px;}
+.tbl-board .txt-tag.type-a {background: orange;}
+.tbl-board .txt-tag.type-b {background: skyblue;}
+.tbl-board .no-data td {height: 150px;}
+
+.tbl-noline {}
+.tbl-noline th {font-size: 14px; font-weight: 400; color: #777; text-align: left; vertical-align: top; padding:10px 0 0 0;}
+.tbl-noline td {padding: 8px 0;}
+
+/* table:col */
+.col-th {width: 140px;}
+.col-num {width: 68px;}
+.col-name {width: 100px;}
+.col-date {width: 100px;}
+.col-divide {width:74px;}
+.col-auto {width: auto;}
+.col-5 {width: 5%;}
+.col-10 {width: 10%;}
+.col-15 {width: 15%;}
+.col-20 {width: 20%;}
+.col-25 {width: 25%;}
+.col-30 {width: 30%;}
+.col-35 {width: 35%;}
+.col-40 {width: 40%;}
+.col-45 {width: 45%;}
+.col-50 {width: 50%;}

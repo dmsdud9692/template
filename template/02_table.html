@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_TABLE GUIDE</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <script language=javascript src="js/menu.js"></script>
+        <section class="wrap-inner">
+            <div class="tit-wrap ">
+                <h1>02_TABLE GUIDE</h1>
+            </div>
+            <!-- 기본 테이블 -->
+            <div class="tbl-base">
+                <table>
+                    <caption>class 예약어<strong>class 예약어</strong>
+                        <p class="ui-caption">클래스명, 설명 정보입니다.</p>
+                    </caption>
+                    <colgroup>
+                        <col class="col-th">
+                        <col class="col-auto">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">클래스명</th>
+                            <th scope="col">설명</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">.col-th</th>
+                            <td>기본적인 행제목 크기 설정. 가이드설정에 따라 달라짐.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">.col-auto</th>
+                            <td>크기가 유동적일때 사용. 주로 col-th와 같이 사용.<br> width="auto"</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">.col-[size]</th>
+                            <td>기본적인 고정 사이즈로 % 기준으로 설정. 주로 콘텐츠 data형 테이블에 사용<ul>
+                                    <li>.col-5
+                                        <!-- -->{width:5%}</li>
+                                    <li>.col-10
+                                        <!-- -->{width:10%}</li>
+                                    <li>.col-15
+                                        <!-- -->{width:15%}</li>
+                                    <li>.col-20
+                                        <!-- -->{width:20%}</li>
+                                    <li>.col-25
+                                        <!-- -->{width:25%}</li>
+                                    <li>.col-30
+                                        <!-- -->{width:30%}</li>
+                                    <li>.col-35
+                                        <!-- -->{width:35%}</li>
+                                    <li>.col-40
+                                        <!-- -->{width:40%}</li>
+                                    <li>.col-45
+                                        <!-- -->{width:45%}</li>
+                                    <li>.col-50
+                                        <!-- -->{width:50%}</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">.col-[name]</th>
+                            <td>게시판형 목록 테이블에서 크기를 일정하게 사용하는 항목에 사용<br>예) <br>.col-name
+                                <!-- -->{width:100px}
+                                <!-- --> /* 이름, 성명 */<br>.col-date
+                                <!-- -->{width:200px}
+                                <!-- --> /* yyyy-mm-dd 형의 날짜 */</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 게시판 테이블 -->
+            <h2 class="mt40">테이블 유형</h2>
+            <h3 class="mt30">목록형 .tbl-board</h3>
+            <br>일반적인 게시판 목록 유형 테이블
+            <div class="tbl-board">
+                <table>
+                    <caption></caption>
+                    <colgroup>
+                        <col class="col-num">
+                        <col class="col-divide">
+                        <col class="col-auto">
+                        <col class="col-date">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">날짜</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><span class="txt-tag type-a">뉴스</span></td>
+                            <td><a href="#" class="tit">게시판 글 제목입니다.게시판 글 제목입니다.게시판 글 제목입니다.게시판 글 제목입니다.게시판 글 제목입니다.</a>
+                            </td>
+                            <td>2020.04.05</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><span class="txt-tag type-b">공지</span></td>
+                            <td><a href="#" class="tit">게시판 글 제목입니다.</a></td>
+                            <td>2020.04.05</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>[공지]</td>
+                            <td><a href="#" class="tit">게시판 글 제목입니다.</a></td>
+                            <td>2020.04.05</td>
+                        </tr>
+                        <tr class="no-data">
+                            <td colspan="4">등록된 게시물이 없습니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           
+            <!-- 입력 및 확인 테이블-->
+            <h3 class="mt30">정보 입력 및 확인형</h3>
+            <br>주로 입력 유형의 세로형 테이블로 (항목 + 정보) 형으로 대부분 thead 없이 tbody만 사용
+            <h4 class="mt20">thead 포함</h4>
+            <div class="tbl-base type-a">
+                <table>
+                    <caption></caption>
+                    <colgroup>
+                        <col class="col-th">
+                        <col class="col-th">
+                        <col class="col-auto">
+                        <col class="col-date">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">제목</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">제목</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">그룹제목</th>
+                            <th scope="row">제목</th>
+                            <td>2019.06.16</td>
+                            <td class="txt-r">396,970원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">제목</th>
+                            <td>2019.06.16</td>
+                            <td class="txt-r">396,970원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="mt20">only tbody</h4>
+            <div class="tbl-noline">
+                <table>
+                    <caption></caption>
+                    <colgroup>
+                        <col class="col-th">
+                        <col class="col-auto">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">이름</th>
+                            <td>홍길동</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">날짜</th>
+                            <td>2020.04.13</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주소</th>
+                            <td>서울시 노원구 노원로 564 서울시 노원구 노원로 564 서울시 노원구 노원로 564 서울시 노원구 노원로 564</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>
