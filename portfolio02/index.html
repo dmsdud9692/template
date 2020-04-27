@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style-base.css">
+    <title>main</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
     <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="style-pc.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="style-mobile.css">     -->
-    <title>main</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- 구글 아이콘 폰트 -->
+    <script src="js/jquery-1.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $('.gnb-bg, .gnb-sub').hide();
+            // $('.gnb-sub').hide();
+            // $('.total-menu a').hover(
+            //     function() { $('.gnb-bg').toggleClass("show");},
+            // );
+        });
+    </script>
 </head>
 <body>
     <div class="index-wrapper">
@@ -56,9 +67,11 @@
                                             </ul>
                                         </div>
                                         <div class="menu-txt">
-                                            <div class="txt">
-                                                <p>company</p>
-                                                <p>새로운 미래 창조를 위해<br>컴트로닉스가 앞장섭니다.</p>
+                                            <div class="menu-info company">
+                                                <dl>
+                                                    <dt>company</dt>
+                                                    <dd>새로운 미래 창조를 위해<br>컴트로닉스가 앞장섭니다.</dd>
+                                                </dl>
                                             </div>
                                         </div>
                                     </div>
@@ -66,7 +79,7 @@
                             </li>
                             <li>
                                 <a href="#">business</a>
-                                <div class="gnb-sub" style="display: none;">
+                                <div class="gnb-sub">
                                     <div class="menu-list">
                                         <ul>
                                             <li><a href="#">전자사업</a></li>
@@ -76,16 +89,18 @@
                                         </ul>
                                     </div>
                                     <div class="menu-txt">
-                                        <div class="txt">
-                                            <p>business</p>
-                                            <p>기술혁신을 위해 끊임없는<br>도전하는 컴트로닉스</p>
+                                        <div class="menu-info company">
+                                            <dl>
+                                                <dt>business</dt>
+                                                <dd>기술혁신을 위해 끊임없는<br>도전하는 컴트로닉스</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <a href="#">ir</a>
-                                <div class="gnb-sub" style="display: none;">
+                                <div class="gnb-sub">
                                     <div class="menu-list">
                                         <ul>
                                             <li><a href="#">주가정보</a></li>
@@ -96,16 +111,18 @@
                                         </ul>
                                     </div> 
                                     <div class="menu-txt">
-                                        <div class="txt">
-                                            <p>ir</p>
-                                            <p>빠르고 정확한 정보로<br>투자에 힘이 되어드리겠습니다.</p>
+                                        <div class="menu-info company">
+                                            <dl>
+                                                <dt>ir</dt>
+                                                <dd>빠르고 정확한 정보로<br>투자에 힘이 되어드리겠습니다.</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <a href="#">pr</a>
-                                <div class="gnb-sub" style="display: none;">
+                                <div class="gnb-sub">
                                     <div class="menu-list">
                                         <ul>
                                             <li><a href="#">뉴스</a></li>
@@ -114,16 +131,18 @@
                                         </ul>
                                     </div>
                                     <div class="menu-txt">
-                                        <div class="txt">
-                                            <p>pr</p>
-                                            <p>컴트로닉스의<br>어제와 오늘을 만나보세요.</p>
+                                        <div class="menu-info company">
+                                            <dl>
+                                                <dt>pr</dt>
+                                                <dd>컴트로닉스의<br>어제와 오늘을 만나보세요.</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <a href="#">hr</a>
-                                <div class="gnb-sub" style="display: none;">
+                                <div class="gnb-sub">
                                     <div class="menu-list">
                                         <ul>
                                             <li><a href="#">인사제도</a></li>
@@ -132,16 +151,18 @@
                                         </ul>
                                     </div>
                                     <div class="menu-txt">
-                                        <div class="txt">
-                                            <p>hr</p>
-                                            <p>글로벌 시장을 이끌어갈<br>창조적 인재를 키워 나갑니다.</p>
+                                        <div class="menu-info company">
+                                            <dl>
+                                                <dt>hr</dt>
+                                                <dd>글로벌 시장을 이끌어갈<br>창조적 인재를 키워 나갑니다.</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <a href="#">윤리경영</a>
-                                <div class="gnb-sub" style="display: none;">
+                                <div class="gnb-sub">
                                     <div class="menu-list">
                                         <ul>
                                             <li><a href="#">임직원 행동지침</a></li>
@@ -151,9 +172,11 @@
                                         </ul>
                                     </div>
                                     <div class="menu-txt">
-                                        <div class="txt">
-                                            <p>윤리경영</p>
-                                            <p>컴트로닉스는 사회적 책임을 다하려는<br>경영원칙을 지켜나갈 것입니다.</p>
+                                        <div class="menu-info company">
+                                            <dl>
+                                                <dt>윤리경영</dt>
+                                                <dd>컴트로닉스는 사회적 책임을 다하려는<br>경영원칙을 지켜나갈 것입니다.</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                 </div>
@@ -173,53 +196,81 @@
 
             <!-- main banner link contents -->
             <section class="main-banner-link">
-                <div class="global">
-                    <p>global technology</p>
-                    <p>세계적인 기술력으로 지속 성장을 노력하는 선진기업</p>
+                <div class="banner-slide">
+                    <dl>
+                        <dt class="banner-txt"><span>global technology</span></dt>
+                        <dd class="banner-txt"><span>세계적인 기술력으로 지속 성장을 노력하는 선진기업</span></dd>
+                    </dl>
                 </div>
-                <div class="right-cont">
-                    <!-- 그리드 레이아웃 테스트 해보기 -->
-                    <div class="link-cont">
-                        <nav class="company">
-                            <h2>company</h2>
-                            <ul>
-                                <li><a href="#">ceo인사말</a></li>
-                                <li><a href="#">비전</a></li>
-                                <li><a href="#">연혁/수상실적</a></li>
-                                <li><a href="#">사업장 소개</a></li>
-                                <li><a href="#">계열사 소개</a></li>
-                            </ul>
-                        </nav>
-                        <nav class="ir">
-                            <h2>ir</h2>
-                            <ul>
-                                <li><a href="#">주가정보</a></li>
-                                <li><a href="#">재무정보</a></li>
-                                <li><a href="#">결산정보</a></li>
-                                <li><a href="#">공시정보</a></li>
-                                <li><a href="#">ir자료실</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="automate">
-                        <p>automated driving</p>
-                        <p>자율주행에서 필수적으로 갖추어야 할 핵심인 v2x/wave기술의 개발</p>
-                    </div>
+                <div class="link-cont">
+                    <nav class="company">
+                        <h2><span>Company</span></h2>
+                        <ul>
+                            <li><a href="#">ceo인사말</a></li>
+                            <li><a href="#">비전</a></li>
+                            <li><a href="#">연혁/수상실적</a></li>
+                            <li><a href="#">사업장 소개</a></li>
+                            <li><a href="#">계열사 소개</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="ir">
+                        <h2><span>IR </span></h2>
+                        <ul>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">결산정보</a></li>
+                            <li><a href="#">공시정보</a></li>
+                            <li><a href="#">ir자료실</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="automate">
+                    <dl>
+                        <dt><span>automated driving</span></dt>
+                        <dd><span>자율주행에서 필수적으로 갖추어야 할 핵심인 v2x/wave기술의 개발</span></dd>
+                    </dl>
                 </div>
             </section>
             <!-- //main banner link contents -->
 
             <!-- main infomation -->
             <section class="infomation">
-                <div class="tit">
-                    <h2>infomation</h2>
-                    <p>고객의 모든 순간을 가치있게 만드는 chemtronics</p>
+                <div class="grid-line">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="info-cont-wrap">
+                    <div class="tit-wrap">
+                        <h2><span>infomation</span></h2>
+                        <p><span>고객의 모든 순간을 가치있게 만드는 chemtronics</span></p>
+                    </div>
+                    <div class="info-cont">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt><em>투자정보</em></dt>
+                                    <dd>
+                                        <p><em>12,400</em></p>
+                                        <div>
+                                            <p><span>전일대비</span><em>▲100</em></p>
+                                            <p><span>등락률</span><em>▲0.88</em></p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <!--  //main infomation -->
 
             <!-- publick relations -->
             <section class="public-relations">
+
                 <div class="tit">
                     <h2>publick relations</h2>
                     <p>고객을 위해 다양한 혁신을 시도하는 chemtronics의 이야기를 소개합니다.</p>
@@ -241,5 +292,6 @@
             <!-- //footer contents -->
         </div>
     </div>
+    
 </body>
 </html>
