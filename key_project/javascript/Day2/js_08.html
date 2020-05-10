@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적 프로그램</title>
+    <script>
+        var name = prompt("이름을 입력하세요.");
+        var a = Number(prompt("국어점수를 입력하세요."));
+        var b = Number(prompt("수학점수를 입력하세요."));
+        var c = Number(prompt("영어점수를 입력하세요."));
+        var total = a + b + c;
+        var average = total / 3;
+    </script>
+</head>
+<body>
+    <h2>성적 프로그램</h2>
+    <script>
+        document.write("<b style='color:blue; font-size:20px;'>" + name + "</b>님의 성적" + "<br>");
+        document.write("국어점수 : " + a + "<br>");
+        document.write("수학점수 : " + b + "<br>");
+        document.write("영어점수 : " + c + "<br>");
+        document.write("총점 : " + total + "<br>");
+        document.write("평균 : " + average + "<br>");
+    </script>
+</body>
+</html>
