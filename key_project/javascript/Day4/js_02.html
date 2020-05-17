@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 객체</title>
+</head>
+<body>
+    <h2>Math 객체</h2>
+    <script>
+        var rm = Math.random(); 
+        document.write(rm + "<br>");
+
+        document.write((rm * 10) + "<br>");
+
+        document.write(Math.floor(rm * 10) + "<br>");
+        // 가능범위 0~9
+        document.write((Math.floor(rm * 10) + 1 ) + "<br>");
+        // 가능범위 0~10
+    </script>
+    <br>
+    <br>
+    <script>
+        // 0 ~ 45
+        var lotto = Math.floor(Math.random() * 45) + 1;
+        document.write("1~45까지 숫자 중 :" + lotto);
+    </script>
+</body>
+</html>
