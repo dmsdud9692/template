@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByName</title>
+</head>
+<body>
+    <h2 name="first">getElementsByName</h2>
+    <ul>
+        <li name="first">강은영</li>
+        <li>이호정</li>
+        <li>아가은</li>
+        <li>이서은</li>
+        <li>우리가족</li>
+    </ul>
+    <script>
+        var selName = document.getElementsByName("first");
+        for(let i=0; i<selName.length; i++){
+            selName.item(i).style.color = "green";
+        }
+    </script>
+</body>
+</html>
