@@ -18,6 +18,9 @@
             // $('.total-menu a').hover(
             //     function() { $('.gnb-bg').toggleClass("show");},
             // );
+            $('.util-dropdown').click(function(){
+                $(this).toggleClass('show');
+            });
         });
     </script>
 </head>
@@ -30,21 +33,31 @@
                     <div class="header-inner">
                         <h1 class="logo"><a href="#"><img src="images/header-logo.png" alt="chemtronics"></a></h1>
                         <div class="util">
-                            <div class="util-select family-site">
+                            <!-- <div class="util-select family-site">
                                 <a href=""><strong>family</strong></a>
                                 <ul style="display: none;">
                                     <li><a href="www.naver.com" target="_blank">naver</a></li>
                                     <li><a href="www.google.com" target="_blank">google</a></li>
                                 </ul>
+                            </div> -->
+
+                            <div class="util-dropdown family-site">
+                                <button class="dropbtn">family</button>
+                                <div class="dropdown-content">
+                                    <a href="www.naver.com" target="_blank">naver</a>
+                                    <a href="www.google.com" target="_blank">google</a>
+                                </div>
                             </div>
-                            <div class="util-select language">
-                                <a href=""><strong>kor</strong></a>
-                                <ul style="display: none;">
-                                    <li><a href="">kor</a></li>
-                                    <li><a href="">eng</a></li>
-                                    <li><a href="">chi</a></li>
-                                </ul>
+
+                            <div class="util-dropdown language">
+                                <button class="dropbtn">kor</button>
+                                <div class="dropdown-content">
+                                    <a href="">kor</a>
+                                    <a href="">eng</a>
+                                    <a href="">chi</a>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                     <!-- navigation -->
@@ -249,7 +262,43 @@
                         <p><span>고객의 모든 순간을 가치있게 만드는 chemtronics</span></p>
                     </div>
                     <div class="info-cont">
-                        <ul>
+                        <ul class="clearfix">
+                            <li>
+                                <dl>
+                                    <dt><em>투자정보</em></dt>
+                                    <dd>
+                                        <p><em>12,400</em></p>
+                                        <div>
+                                            <p><span>전일대비</span><em>▲100</em></p>
+                                            <p><span>등락률</span><em>▲0.88</em></p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><em>투자정보</em></dt>
+                                    <dd>
+                                        <p><em>12,400</em></p>
+                                        <div>
+                                            <p><span>전일대비</span><em>▲100</em></p>
+                                            <p><span>등락률</span><em>▲0.88</em></p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><em>투자정보</em></dt>
+                                    <dd>
+                                        <p><em>12,400</em></p>
+                                        <div>
+                                            <p><span>전일대비</span><em>▲100</em></p>
+                                            <p><span>등락률</span><em>▲0.88</em></p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
                             <li>
                                 <dl>
                                     <dt><em>투자정보</em></dt>
